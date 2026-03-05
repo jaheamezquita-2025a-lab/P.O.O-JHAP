@@ -1,0 +1,26 @@
+package com.corhuila.poo.semana1.tarea;
+
+public class Tarea {
+
+    private String titulo;
+    private String descripcion;
+    private boolean completada;
+
+    public Tarea(String titulo, String descripcion) {
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+        this.completada = false;
+    }
+
+    public void marcarComoHecha() {
+        completada = true;
+    }
+
+    public void marcarComoPendiente() {
+        completada = false;
+    }
+
+    public String resumen() {
+        return "Tarea{titulo='" + titulo + "', descripcion='" + descripcion + "', completada=" + completada + "}";
+    }
+}
