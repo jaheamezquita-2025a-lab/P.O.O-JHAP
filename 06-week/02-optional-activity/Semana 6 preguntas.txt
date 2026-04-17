@@ -1,0 +1,15 @@
+10–15 líneas respondiendo: ¿qué colocaste en Persona y por qué? ¿qué quedó en las subclases y por qué?
+
+En la clase Persona coloqué los atributos documento, nombre y correo porque son datos que todas las
+personas tienen dentro de la universidad. Tambien agregué el constructor para inicializar esos datos y el
+método ficha() para poder mostrar la informacion básica de cada objeto. Esto evita repetir codigo en otras clases.
+
+En las subclases Docente y Administrativo dejé solo los atributos que son propios de cada una. En Docente
+agregué el area, ya que representa en que parte academica trabaja. En Administrativo agregué el cargo,
+porque define su funcion dentro de la institucion.
+
+Se utilizó la herencia con extends para que ambas clases puedan reutilizar lo de Persona sin tener que volver
+a escribirlo. Tambien se usó super(...) en los constructores para inicializar los atributos heredados.
+ 
+ En general, se aplica la relacion “es-un”, ya que un docente y un administrativo son tipos de persona. Esto
+ hace que el codigo sea mas organizado y facil de entender.
