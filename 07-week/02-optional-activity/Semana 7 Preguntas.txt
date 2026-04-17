@@ -1,0 +1,22 @@
+12–18 líneas: ¿dónde aplicaste polimorfismo? ¿qué método sobrescribiste y por qué? ¿qué pasaría si agregas un nuevo tipo de envío?
+
+En este ejercicio se aplicó el polimorfismo utilizando una lista de tipo Envio, en la cual se almacenaron
+diferentes tipos de envíos. Aunque todos los objetos fueron tratados como Envio, cada uno ejecutó su
+propio método calcularCosto(), lo que permitió ver claramente el comportamiento distinto en cada caso.
+
+En la clase base Envio se definieron los atributos codigo y pesoKg, ya que son datos comunes para todos los
+envios. Tambien se incluyó el método calcularCosto(), el cual fue sobrescrito en las subclases, y el método
+resumen() para mostrar la informacion general.
+
+En las subclases EnvioEstandar, EnvioExpress y EnvioInternacional se sobrescribió el método calcularCosto()
+usando @Override, porque cada tipo de envio tiene una forma diferente de calcular su costo. En el caso de
+EnvioInternacional se agregó además el atributo paisDestino.
+
+El polimorfismo se evidenció en el uso del ciclo for, donde se recorrió la lista y se llamó al mismo método,
+pero Java ejecutó el correspondiente segun el tipo real del objeto.
+
+Si se agregara un nuevo tipo de envio, no seria necesario modificar el código existente, ya que solo se
+tendria que crear una nueva subclase que sobrescriba el método calcularCosto(), lo que hace el programa
+mas flexible y facil de mantener.
+
+
